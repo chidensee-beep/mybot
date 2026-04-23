@@ -14,5 +14,10 @@ def check_stock(product_name):
         return "ขออภัยครับ รบกวนระบุชื่อสินค้าที่ต้องการให้ชัดเจนหน่อยครับ"
 
 # ลองเรียกใช้งาน
-print(check_stock("ขอราคา Endmill ครับ"))
-print(check_stock("มี Drill ไหม"))
+print("---ระบบเช็คสต็อก CA-GO เริ่มทำงานแล้ว (พิมพ์ 'exit' เพื่อออก)---")
+while True: # สั่งให้ระบบทำงานต่อเนื่องจนกว่าจะพิมพ์ 'exit'
+    user_input = input("ลูกค้าพิมพ์ว่าอะไรคะ?: ")
+   # ถ้าลูกค้าพิมพ์ 'exit' ให้หยุดการทำงานของระบบ
+    if user_input.lower() == 'exit':
+        print("ขอบคุณที่ใช้บริการ CA-GO ครับ สวัสดีครับ!")
+        break
